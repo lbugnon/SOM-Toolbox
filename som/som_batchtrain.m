@@ -404,8 +404,7 @@ dconst = ((D.^2)*mask)'; % constant in distance calculation for each data sample
 
 % initialize tracking
 start = clock;
-qe = zeros(trainlen,1); 
-  
+qe = zeros(trainlen,1);   
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %% Action
 
