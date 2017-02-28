@@ -240,10 +240,6 @@ if dim > 1 && sum(msize > 1) > 1,
   V       = V(:,flipud(ind)); 
   V       = V(:,1:mdim);
   eigval  = eigval(1:mdim);   
-
-  if sort(eigval)~=sort([S(15,15);S(16,16)])
-      fprintf('Los autovalores de las etiquetas no son los mayores')
-  end
   
   % normalize eigenvectors to unit length and multiply them by 
   % corresponding (square-root-of-)eigenvalues
