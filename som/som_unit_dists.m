@@ -151,7 +151,7 @@ function Ud = som_unit_dists(topol,lattice,shape)
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %% Check arguments 
 
-error(nargchk(1, 3, nargin));
+narginchk(1, 3);
 
 % default values
 sTopol = som_set('som_topol','lattice','rect');

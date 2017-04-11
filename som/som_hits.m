@@ -108,7 +108,7 @@ function [hits] = som_hits(sMap, sData, mode)
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %% check arguments
 
-error(nargchk(2, 3, nargin));  % check no. of input args is correct
+narginchk(2, 3);  % check no. of input args is correct
 
 if isstruct(sMap), 
   switch sMap.type, 

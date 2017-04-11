@@ -224,7 +224,7 @@ function [sMap,sTrain] = som_batchtrain(sMap, D, varargin)
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %% Check arguments 
 
-error(nargchk(2, Inf, nargin));  % check the number of input arguments
+narginchk(2, Inf);  % check the number of input arguments
 
 % map 
 struct_mode = isstruct(sMap);

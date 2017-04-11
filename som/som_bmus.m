@@ -123,7 +123,7 @@ function [Bmus,Qerrors] = som_bmus(sMap, sData, which_bmus, mask)
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %% check arguments and initialize
 
-error(nargchk(1, 4, nargin));  % check no. of input args is correct
+narginchk(1, 4);  % check no. of input args is correct
 
 % sMap
 if isstruct(sMap), 
